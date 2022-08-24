@@ -1,4 +1,4 @@
-package com.cbin.demo.html
+package com.cbin.demo.controller
 
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model

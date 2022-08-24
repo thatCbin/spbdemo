@@ -1,4 +1,4 @@
-package com.cbin.demo.html
+package com.cbin.demo.controller
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController
  * @describe
  */
 @RestController
-class TestController {
+class HelloWordController {
     @GetMapping("/get/h")
     fun h(@RequestParam(value = "name", defaultValue = "World") name: String): String {
         return "Hello $name"
