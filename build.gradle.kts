@@ -5,7 +5,6 @@ plugins {
     id("org.springframework.boot") version "2.7.2"
     id("io.spring.dependency-management") version "1.0.12.RELEASE"
 
-    kotlin("plugin.jpa") version kotlin_version//Kotlin JPA 插件
     kotlin("jvm") version kotlin_version
     kotlin("plugin.spring") version kotlin_version
 }
@@ -16,7 +15,6 @@ java.sourceCompatibility = JavaVersion.VERSION_11
 
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-mustache")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")//增加对 Kotlin 类和数据类的序列化/反序列化的支持
